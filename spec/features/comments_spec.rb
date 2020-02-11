@@ -16,11 +16,6 @@ describe 'comments', type: 'feature' do
     expect(page).to have_content("#{@user.username} says: great post!")
   end
 
-  it 'creates a comment and a new user' do
-    fill_in('comment_content', with: 'i agree')
-   
-    click_button('Create Comment')
-    expect(page).to have_content("CoolPerson25 says: i agree")
-  end
+  
 
 end
